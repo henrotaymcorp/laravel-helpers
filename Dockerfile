@@ -4,10 +4,10 @@ COPY --from=composer:2.5.8 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /opt/apps/app
 
-COPY composer.json ./
+COPY composer.json composer.lock ./
 
-RUN composer update --no-scripts --no-autoloader --prefer-dist
+RUN composer install --no-scripts --no-autoloader --prefer-dist
 
 COPY . .
 
-RUN composer update --prefer-dist
+RUN composer install --prefer-dist
