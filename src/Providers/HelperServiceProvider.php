@@ -9,7 +9,7 @@ use Henrotaym\LaravelHelpers\Auth\Contracts\BasicAuthHelpersContract;
 
 class HelperServiceProvider extends ServiceProvider
 {
-    public function register()
+    public function register(): void
     {
         $this->app->bind(BasicAuthHelpersContract::class, BasicAuthHelpers::class);
         

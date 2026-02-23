@@ -20,9 +20,9 @@ class BasicAuthHelpersTest extends TestCase
      * 
      * @return void
      */
-    public function setup(): void
+    public function setUp(): void
     {
-        parent::setup();
+        parent::setUp();
         $this->setAuthHelpers()
             ->mockHelpers()
             ->mockRequest()
@@ -120,7 +120,7 @@ class BasicAuthHelpersTest extends TestCase
      * @param string $value
      * @return self
      */
-    protected function setEncoded(string $value = null): self
+    protected function setEncoded(?string $value = null): self
     {
         $this->encoded = "Basic ". base64_encode($value ?? "$this->username:$this->password");
 

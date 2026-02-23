@@ -8,9 +8,12 @@ use Henrotaym\LaravelHelpers\Auth\Contracts\BasicAuthCredentialsContract;
  */
 class BasicAuthCredentials implements BasicAuthCredentialsContract
 {
+    protected string $username;
+    protected string $password;
+
     /**
      * Instanciating basic credentials.
-     * 
+     *
      * @param string $username
      * @param string $password
      */

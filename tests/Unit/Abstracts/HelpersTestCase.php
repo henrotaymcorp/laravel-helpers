@@ -18,9 +18,9 @@ abstract class HelpersTestCase extends TestCase
      * 
      * @return void
      */
-    public function setup(): void
+    public function setUp(): void
     {
-        parent::setup();
+        parent::setUp();
         $this->setHelpers();
     }
 

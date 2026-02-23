@@ -9,16 +9,16 @@ use Henrotaym\LaravelHelpers\Auth\BasicAuthCredentials;
  * 
  * @see BasicAuthCredentials
  */
-class BasicCredentialsTest extends TestCase
+class BasicAuthCredentialsTest extends TestCase
 {
     /** 
      * Setting up tests.
      * 
      * @return void
      */
-    public function setup(): void
+    public function setUp(): void
     {
-        parent::setup();
+        parent::setUp();
         $this->setCredentials();
     }
 
