@@ -2,6 +2,13 @@
 
 A kit of usefull helpers accessible via a facade.
 
+## Compatibility
+
+| Laravel | Package |
+|---|---|
+| 8.x | 1.x |
+| 12.x | 2.x |
+
 ## Installation
 
 	composer require henrotaym/laravel-helpers
